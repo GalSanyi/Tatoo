@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-pagin-down" viewBox="0 0 14 32">
+<path fill="none" stroke="#bb8c5f" style="stroke: var(--color1, #bb8c5f)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.5275" d="M0.264 0.264v13.538h13.538v-13.538h-13.538z"></path>
+<path fill="#bb8c5f" style="fill: var(--color1, #bb8c5f)" d="M7.033 31.764l-1.523-1.523 1.523-1.523 1.523 1.523-1.523 1.523zM7.297 7.736v22.506h-0.527v-22.506h0.527z"></path>
+</symbol>
+<symbol id="icon-pagin-up" viewBox="0 0 20 32">
+<path fill="none" stroke="#bb8c5f" style="stroke: var(--color1, #bb8c5f)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7619" d="M0.381 31.619v-19.556h19.556v19.556h-19.556z"></path>
+<path fill="#bb8c5f" style="fill: var(--color1, #bb8c5f)" d="M10.159 0.34l-2.199 2.199 2.199 2.199 2.199-2.199-2.199-2.199zM10.54 20.825v-18.286h-0.762v18.286h0.762z"></path>
+</symbol>
+</defs>
+</svg>

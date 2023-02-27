@@ -54,14 +54,12 @@ img {
   display: inline-block;
 }
 .logo__line-before {
-  content: "";
   width: 5px;
   height: 5px;
   transform: rotate(230deg);
   background: #bb8c5f;
 }
 .logo__line-after {
-  content: "";
   width: 5px;
   height: 5px;
   transform: rotate(230deg);
@@ -126,6 +124,7 @@ img {
 }
 .logo {
   margin-right: 265px;
+  margin-bottom: 14px;
 }
 .logo h1 {
   display: flex;
@@ -299,6 +298,7 @@ img {
 .head {
   height: 700px;
   background-image: url("../img/bg-head.png");
+  background-repeat: no-repeat;
 }
 .head__text {
   margin-top: 110px;
@@ -320,6 +320,7 @@ img {
   font-size: 25px;
   line-height: 140%;
   color: #faf6f2;
+  margin-bottom: 60px;
 }
 
 .btn__head {
@@ -338,4 +339,53 @@ img {
   line-height: 150%;
   text-align: center;
   color: #faf6f2;
+}
+.square {
+  display: grid;
+  justify-items: center;
+}
+.class-square {
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #bb8c5f;
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.class__square-down {
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #bb8c5f;
+  transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+.square__line-down {
+  width: 64px;
+  background: #524336;
+  border: 1.5px solid #bb8c5f;
+  transform: matrix(0, 1, 1, 0, 0, 9);
+}
+.square__line-up {
+  width: 36px;
+  border: 1.5px solid #bb8c5f;
+  transform: rotate(-90deg);
+}
+.square__little {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #524336;
+  cursor: pointer;
+}
+.pagin__down {
+  margin-top: 20px;
+}
+.pagin__up {
+  margin-bottom: 20px;
+}
+.square__little:last-child {
+  margin-bottom: 0;
+}
+.pagin {
+  margin-top: 130px;
 }
