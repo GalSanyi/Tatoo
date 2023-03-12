@@ -78,6 +78,12 @@ img {
   font-size: 15px;
   line-height: 150%;
   color: #faf6f2;
+  text-decoration: none;
+}
+.contact__number a:hover,
+.contact__number a:focus {
+  text-decoration: none;
+  color: #faf6f2;
 }
 .mail__contact .letter {
   width: 20px;
@@ -88,6 +94,7 @@ img {
 .contact__phone {
   margin-right: 15px;
 }
+
 .social {
   display: flex;
   column-gap: 10px;
@@ -324,7 +331,7 @@ img {
 }
 
 .btn__head {
-  background-image: url("../img/btn.png");
+  background-image: url("../img/rectangle-3.png");
   border: none;
   background-color: transparent;
   width: 275px;
@@ -378,9 +385,11 @@ img {
   cursor: pointer;
 }
 .pagin__down {
+  cursor: pointer;
   margin-top: 20px;
 }
 .pagin__up {
+  cursor: pointer;
   margin-bottom: 20px;
 }
 .square__little:last-child {
@@ -389,3 +398,184 @@ img {
 .pagin {
   margin-top: 130px;
 }
+
+/* *************************************CARD******************************************** */
+.section {
+  background: #eeeeee;
+  height: 1200px;
+}
+.nav__card {
+  margin: 130px 0 20px 0;
+}
+.card__table {
+  cursor: pointer;
+  height: 384px;
+  background: #f5f5f5;
+}
+.nav__card-list {
+  display: flex;
+  column-gap: 11rem;
+  cursor: pointer;
+}
+
+.nav__card-item {
+  font-family: "Jost";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 115%;
+  text-decoration: none;
+
+  color: #3e424b;
+}
+.nav__card-item:hover,
+.nav__card-item:focus {
+  text-decoration: none;
+  color: #bb8c5f;
+}
+.nav__card-item:hover::after {
+  content: "";
+
+  width: 272px;
+  height: 0px;
+  background-image: url("../img/line.png");
+}
+.info {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rectangle-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 29px;
+  width: 85px;
+  background-image: url("../img/rectangle-2.png");
+}
+.rectangle-2 p {
+  margin: 0;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: #bb8c5f;
+}
+.page-link {
+  border-radius: 0;
+}
+.pagination__card {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  cursor: pointer;
+}
+.pagination__card li {
+  width: 6px;
+  height: 6px;
+  background: #e3e3e3;
+}
+.pagination__card li.inactive {
+  background: #e3e3e3;
+}
+
+.pagination__card li.active {
+  background: #524336;
+}
+.heart {
+  cursor: pointer;
+}
+.heart .heart__full {
+  display: none;
+}
+
+.heart.is-open .heart__full {
+  display: block;
+}
+.heart.is-open .heart__main {
+  display: none;
+}
+.row-1 {
+  margin-bottom: 20px;
+}
+.card-body {
+  font-family: "Jost";
+  margin: 6px 0px 10px 30px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  width: 229px;
+  height: 48px;
+  color: #3e424b;
+}
+.score {
+  width: 96px;
+  height: 31px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  margin-left: 30px;
+  color: #bb8c5f;
+}
+.add__basket {
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-image: url("../img/rectemgle.png");
+  background-repeat: no-repeat;
+  width: 259px;
+  height: 50px;
+}
+
+.card__table:hover {
+  width: 289px;
+  height: 480px;
+  background: #f5f5f5;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+  transform: translateY(0);
+}
+.card__table:hover .add__basket {
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__basket p {
+  margin: 0;
+  text-align: center;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #bb8c5f;
+}
+.show__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0px;
+  width: 275px;
+  height: 70px;
+  background-image: url("../img/rectangle-4.png");
+  cursor: pointer;
+}
+.show__more p {
+  font-family: "Jost";
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #bb8c5f;
+}
+
+/* **************************CARD-2******************************* */
