@@ -85,9 +85,11 @@
                     <svg width="20" height="20">
                       <use href="./img/svg/symbol-defs-1.svg#icon-basket"></use>
                     </svg>
-                    <span class="basket__count"
-                      ><p class="basket__count-text">1</p></span
-                    >
+                    <span
+                      class="basket__count"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                    ></span>
                   </span>
                   <span
                     ><svg width="28" height="28">
@@ -101,7 +103,24 @@
                   </span>
                 </div>
               </div>
-
+              <!--
+                Modal
+             -->
+              <div id="myModal" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal__text">Product</h4>
+                      <div class="modal-body field"></div>
+                      <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">
+                          close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="nav__down">
                 <div class="nav__down-triangle">
                   <div class="down__triangle-after"></div>
@@ -186,8 +205,7 @@
                     <span class="pagin__down">
                       <svg>
                         <use
-                          href="./img/svg/symbol-defs.svg#icon-pagin-down
-"
+                          href="./img/svg/symbol-defs.svg#icon-pagin-down"
                         ></use>
                       </svg>
                     </span>
@@ -247,7 +265,7 @@
                     </p>
                   </div>
                   <span class="score">6000&euro;</span>
-                  <div class="add__basket"><p>Add in basket</p></div>
+                  <div class="add__basket"><p>Add to basket</p></div>
                 </div>
               </div>
 
@@ -510,7 +528,9 @@
                     </p>
                   </div>
                   <span class="score">6000&euro;</span>
-                  <div class="add__basket"><p>Add in basket</p></div>
+                  <div type="button" class="add__basket">
+                    <p>Add in basket</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -520,23 +540,118 @@
       </section>
       <section class="section">
         <div class="container">
-          <div class="row"></div>
+          <div class="catalog"><h2>Catalog</h2></div>
+          <div class="row sets">
+            <div class="col-md-5">
+              <div class="tattoo__sets">
+                <p>tattoo sets</p>
+                <img src="./img/tatto-sets.jpg" alt="sets" />
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="holders">
+                <p>Holders</p>
+                <div class="holders__img"></div>
+                <!-- <img src="./img/holders.jpg" alt="sets" /> -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="tattoo__machines">
+                <p>Tattoo machines</p>
+                <div class="tattoo__machines-img"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="pedals">
+                <p>Pedals and wires</p>
+                <div class="pedals__wires"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="tattoo__machines">
+                <p>Paints</p>
+                <div class="paints-img"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row power-block">
+            <div class="col-md-6">
+              <div class="power">
+                <p>Power supplies</p>
+                <div class="power__supplies"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="accessories">
+                <p>Accessories</p>
+                <div class="accessories__img"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="printer">
+                <p>Printers and tablets</p>
+                <img src="./img/printer.jpg" alt="printer" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- <section class="section">
-        <div class="container">
-          <div class="row"></div>
+      <section class="section-banner">
+        <div class="container-fluid">
+          <div class="col-md-6">
+            <div class="left__banner">
+              <p>Paints Lip Nitn</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="right__banner">
+              <p>Foxx viper — is a hit of 2021</p>
+            </div>
+          </div>
         </div>
-      </section> -->
+      </section>
+      <section class="section">
+        <div class="container-fluit">
+          <div class="brands">
+            <h3>Popular brands</h3>
+
+            <div class="brands__block">
+              <div class="brands__left">
+                <div class="brands__left-triangle"></div>
+              </div>
+              <ul class="brands__list">
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+                <li class="brands__item"></li>
+              </ul>
+              <div class="brands__right">
+                <div class="brands__right-triangle"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
 
     <script src="./js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
   </body>
